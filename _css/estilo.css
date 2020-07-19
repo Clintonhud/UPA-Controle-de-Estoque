@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+body {
+    background-image: url("../_imagens/upa_ita.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+/*formatação da tela de Login*/
+aside#lateralLogin {
+    display: block;
+    width: 450px;
+    height: 635px;
+    float: right;
+    padding: 10px;
+    background-color: rgba(159, 171, 165, .5);
+    margin: -7px -7px 0px auto;
+    text-align: center;
+}
+
+aside#lateralLogin p{
+    margin-top: 20px;
+}
+
+aside#lateralLogin form{
+    padding-bottom: 150px;
+}
+
+aside#lateralLogin button{
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: rgba(84, 130, 53);
+    color: white;
+    margin-top: 30px;
+}
+
+aside#lateralLogin h1{
+    font-size: 40px;
+    font-family: Georgia;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+aside#lateralLogin input{
+    border-radius: 5px;
+    height: 40px;
+    background-color: rgba(208, 206, 206);
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+section#telaprincipal {
+    display: block;
+    float: left;
+    text-align: center;
+    margin-top: 220px;
+    margin-left: 100px;
+}
+
+section#telaprincipal h1{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(197, 224, 180);
+}
+
+section#telaprincipal h2 {
+    color: white;
+    font-size: 28px;
+}
+
+/*Formatação do cabecalho*/
+header#cabecalho {
+    background-color: rgba(159, 171, 165, .5);
+    margin: -20px -7px 0px -10px;
+}
+
+header#cabecalho h1{
+    color: white;
+    padding: 20px;
+    padding-left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header#cabecalho p {
+    display: block;
+    float: right;
+    margin-top: -70px;
+    padding-right: 10px;
+}
+
+header#cabecalho a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Formatação da logo*/
+figure#logo img#icone{
+    display: block;
+    max-width: 50%;
+    height: auto;
+    margin: auto auto auto 150px;
+    float: left;
+}
+
+/*formatação dos Botoes laterais*/
+aside#lateral {
+    display: block;
+    float: right;
+    padding: 10px;
+    margin: auto;
+}
+
+nav#botoes ul{
+    list-style: none;
+    text-transform: uppercase;
+    margin-top: 80px auto auto auto;
+    width: 380px;
+    margin-right: 60px;
+}
+
+
+nav#botoes li {
+    background-color: rgba(197, 224, 180);
+    padding: 30px;
+    margin: 20px;
+    font-size: 16pt;
+    text-align: center;
+    transition: background-color 1s;
+    border: 2px solid rgba(84, 130, 53);
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav#botoes li:hover {
+    background-color: #375239;
+}
+
+nav#botoes h1 {
+    display: none;
+}
+
+nav#botoes a {
+    color: rgba(56, 87, 35);
+    text-decoration: none;
+}
+
+nav#botoes a:hover {
+    color: white;
+}
+
+/*Formatação do rodapé da pagina*/
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
+    color: white;
+}
