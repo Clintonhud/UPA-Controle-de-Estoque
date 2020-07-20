@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+div#busca {
+    text-align: center;
+}
+
+div#busca input {
+    border-radius: 5px;
+    height: 40px;
+    background-color: rgba(208, 206, 206);
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div#busca button {
+    width: 150px;
+    height: 48px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(197, 224, 180);
+    color: rgba(56, 87, 35);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid rgba(56, 87, 35);
+}
+
+table#tabela{
+    margin: 30px;
+    background-color: rgba(226, 240, 217, .4);
+    border: 2px solid rgba(56, 87, 35);
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
+table#tabela td.titulotabela {
+    color: rgba(56, 87, 35);
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#tabela td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
