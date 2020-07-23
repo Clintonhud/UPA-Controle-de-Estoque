@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="_css/listaItens.css">
 </head>
 
+<script>
+    function Nova() {
+        location.href = "cadastroItensLaboratoriais.html";
+    }
+</script>
+
 <body>
     <header id="cabecalho">
         <h1>Controle de Estoque > Itens Laboratoriais</h1>
@@ -15,7 +21,7 @@
     </header>
     <div id="busca">
         <input type="text" name="tBusca" id="cBusca" size="50" placeholder="Buscar" />
-        <button>Cadastrar</button>
+        <button type="button" onclick="Nova()">Cadastrar</button>
     </div>
     <div id="test">
         <table id="tabela">

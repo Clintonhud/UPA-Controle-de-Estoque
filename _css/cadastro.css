@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+section#principal {
+    display: block;
+    background-color: rgba(197, 224, 180);
+    border-radius: 10px;
+    padding: 15px;
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    border: 2px solid rgba(84, 130, 53);
+}
+
+section#principal h1 {
+    margin-bottom: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section#principal h1#med {
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p.solo {
+    margin-bottom: -28px;
+    color: rgba(84, 130, 53);
+    font-weight: bold;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+p.outros {
+    margin-bottom: -20px;
+    color: rgba(84, 130, 53);
+    font-weight: bold;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+section#principal p#lateralpeq {
+    margin-bottom: -10px;
+    color: rgba(84, 130, 53);
+    font-weight: bold;
+    text-align: right;
+    margin-right: 78px;
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+section#principal p#lote {
+    margin-bottom: -10px;
+    color: rgba(84, 130, 53);
+    font-weight: bold;
+    text-align: right;
+    margin-right: 175px;
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+
+section#principal input {
+    margin: 10px;
+}
+
+input.grande {
+    text-align: center;
+    margin-top: 20px;
+    border-color: seagreen;
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+input.pequeno {
+    text-align: center;
+    margin-top: 20px;
+    border-color: seagreen;
+    width: 160px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+section#principal button {
+    margin: 25px;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(84, 130, 53);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
