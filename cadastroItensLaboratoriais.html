@@ -16,17 +16,18 @@
     <section id="principal">
         <h1>Cadastrar Itens Laboratoriais</h1>
         <form>
-            <p class="solo">Nome do Item</p> <br><input type="text" class="grande" />
-            <p class="outros">Data de Entrada</p>
-            <p id="lote">Lote</p>
-            <input type="date" class="pequeno" />
-            <input type="text" class="pequeno" />
-            <p class="outros">Quantidade em Lote</p>
-            <p id="lateralpeq">Data de Validade</p>
-            <input type="number" class="pequeno" />
-            <input type="date" class="pequeno" />
-            <p class="solo">Modalidade</p><br>
-            <input type="text" class="grande" /><br>
+            <p class="solo"><label for="cItem">Nome do Item</label></p><br><input type="text" class="grande"
+                id="cItem" />
+            <p class="outros"><label for="cData">Data de Entrada</label></p>
+            <p id="lote"><label for="cLote">Lote</label></p>
+            <input type="date" class="pequeno" id="cData" />
+            <input type="text" class="pequeno" id="cLote" />
+            <p class="outros"><label for="cQtdLote">Quantidade em Lote</label></p>
+            <p id="lateralpeq"><label for="cValidade">Data de Validade</label></p>
+            <input type="number" class="pequeno" id="cQtdLote" />
+            <input type="date" class="pequeno" id="cValidade" />
+            <p class="solo"><label for="cModalidade">Modalidade</label></p><br>
+            <input type="text" class="grande" id="cModalidade" /><br>
             <button>Cadastrar</button>
         </form>
     </section>

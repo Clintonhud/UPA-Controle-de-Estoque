@@ -69,7 +69,6 @@ section#principal input {
 }
 
 input.grande {
-    text-align: center;
     margin-top: 20px;
     border-color: seagreen;
     width: 350px;
@@ -78,12 +77,19 @@ input.grande {
 }
 
 input.pequeno {
-    text-align: center;
     margin-top: 20px;
     border-color: seagreen;
     width: 160px;
     height: 30px;
     border-radius: 5px;
+}
+
+section#principal input#cData {
+    text-align: center;
+}
+
+section#principal input#cValidade {
+    text-align: center;
 }
 
 section#principal button {
