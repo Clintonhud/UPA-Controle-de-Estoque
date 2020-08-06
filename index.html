@@ -14,11 +14,11 @@
     </section>
     <aside id="lateralLogin">
         <h1>LOGIN</h1>
-        <form action="principal.html">
-            <p><label for="cUsuario"></label><input type="text" name="tUsuario" id="cUsuario" size="50" maxlength="30"
-                    placeholder="Usuário" /></p>
-            <p><label for="cSenha"></label><input type="password" name="tSenha" id="cSenha" size="50" maxlength="30"
-                    placeholder="Senha" /></p>
+        <form method="POST" action="_conexao/login.php">
+            <p><label for="cUsuario"></label><input type="text" name="usuario" id="cUsuario" size="50" maxlength="30"
+                    placeholder="Usuário" required autofocus></p>
+            <p><label for="cSenha"></label><input type="password" name="senha" id="cSenha" size="50" maxlength="30"
+                    placeholder="Senha" required autofocus /></p>
             <button type="submit">Acessar</button>
         </form>
         <footer id="rodape">

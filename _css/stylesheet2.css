@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+table{
+    margin-top: 40px;
+}
+
+table thead td{
+    width: 200px;
+    background: #333;
+    color:#FFF;
+    height: 40px;
+    text-align:center;
+}
+
+table tbody td{
+    width: 40px;
+    height: 40px;
+    text-align:center;
+}
