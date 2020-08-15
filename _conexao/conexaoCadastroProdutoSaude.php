@@ -9,11 +9,12 @@ $qtdLote = $_POST['qtdLote'];
 $dataValidade = $_POST['dataValidade'];
 $modalidade = $_POST['modalidade'];
 $login = 1;
+$retirada = 0;
 
 $conexao = mysqli_connect("localhost", "root", "", "upa") or die(mysqli_error("Falha na conexao do banco"));
 
-$cadastro = ("INSERT INTO `cadastrar_produto_saude` (`lote_saude`, `nome_items`, `data_entradas`, `qtd_lotes`, `data_validades`, `modalidade`, `login_idlogin`)
-    VALUES('$lote', '$nome', '$dataEntrada', '$qtdLote', '$dataValidade', '$modalidade', '$login')");
+$cadastro = ("INSERT INTO `cadastrar_produto_saude` (`lote_saude`, `nome_items`, `data_entradas`, `qtd_lotes`, `data_validades`, `modalidade`, `total_retirada_saude`, `login_idlogin`)
+    VALUES('$lote', '$nome', '$dataEntrada', '$qtdLote', '$dataValidade', '$modalidade', '$retirada', '$login')");
 
 mysqli_query($conexao, $cadastro);
 

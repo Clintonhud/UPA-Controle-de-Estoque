@@ -83,7 +83,7 @@
             echo "<TD>$modalidade </TD>";
         ?>
 
-            <TD><button>Retirada</button></TD>
+            <TD><button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal" data-whatever="<?php echo $tbl['lote_saude']; ?>">Retirada</button></TD>
 
             <TD>
                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" data-whatever="<?php echo $tbl['lote_saude']; ?>">
@@ -102,7 +102,51 @@
         ?>
     </div>
 
-    <!-- Modal -->
+
+    <!-- Modal para Retirada -->
+    <form method="POST" action="retiradaSaude.php">
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="myModal">Retirada de Estoque</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <center>
+                        <div class="modal-body">
+                            Você deseja fazer a retirada desse produto?
+                        </div>
+                        <div class="form-row">
+                            <input id="lote_sau" type="hidden" name="lote_sau">
+                        </div>
+                    </center>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                        <button type="submit" class="btn btn-danger">Sim</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $('#myModal').on('show.bs.modal', function(event) {
+            var button = $(event.relatedTarget) // Button that triggered the modal
+            var recipient = button.data('whatever') // Extract info from data-* attributes
+            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this)
+            modal.find('#lote_sau').val(recipient)
+        })
+    </script>
+
+    <!-- Modal Exclusao-->
     <form method="POST" action="_conexao/excluirSaude.php">
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
