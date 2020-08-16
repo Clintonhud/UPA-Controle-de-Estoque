@@ -4,7 +4,7 @@ $(document).ready(function () {
             var dados = $(this).serialize();
 
             $.ajax({
-                url: 'processaMed.php',
+                url: './_conexao/processaMed.php',
                 type: 'POST',
                 dataType: 'html',
                 data: dados,
