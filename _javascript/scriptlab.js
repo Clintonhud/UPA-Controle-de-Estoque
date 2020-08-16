@@ -1,21 +1,24 @@
 $(document).ready(function () {
-    $('#cBuscaSaude').keyup(function () {
+    $('#campo').keyup(function () {
         $('#form').submit(function () {
             var dados = $(this).serialize();
 
             $.ajax({
-                url: 'processaSaude.php',
+                url: './_conexao/processaLab.php',
                 type: 'POST',
-                datatype: 'html',
+                dataType: 'html',
                 data: dados,
-                sucess: function (data) {
-                    $('#areaSaude').empty().html(data);
+                success: function (data) {
+                    $('#resultado').empty().html(data);
                 }
 
             });
 
             return false;
+
         });
+
         $('#form').trigger('submit');
     });
+
 });

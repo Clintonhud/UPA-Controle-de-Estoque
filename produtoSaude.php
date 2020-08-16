@@ -13,7 +13,7 @@
 
     <title>Produtos para Saúde</title>
     <script type="text/javascript" src="_javascript/jquery-3.5.1.min.js"></script>
-    <script type="text/javascritp" src="_javascript/scriptListaSaude.js"></script>
+    <script type="text/javascript" src="_javascript/scriptsaude.js"></script>
 
 </head>
 
@@ -30,12 +30,11 @@
     </header>
     <div id="busca">
         <form id="form">
-            <input type="text" name="tBuscaSaude" id="cBuscaSaude" size="50" placeholder="BUSCAR">
+            <input type="text" name="campo" id="campo" size="50" placeholder="BUSCAR">
         </form>
-
         <button type="button" onclick="Nova()">Cadastrar</button>
     </div>
-    <div id="areaSaude">
+    <div id="resultado">
         <?php
 
         $servidor = "localhost";
