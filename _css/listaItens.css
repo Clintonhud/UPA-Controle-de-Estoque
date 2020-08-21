@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 div#busca {
-    text-align: center;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 div#busca input {
@@ -13,7 +15,12 @@ div#busca input {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-div#busca button {
+div#botaoCadastra {
+    text-align: center;
+    margin-top: 20px;
+}
+
+div#botaoCadastra button {
     width: 150px;
     height: 48px;
     border-radius: 5px;
@@ -23,6 +30,7 @@ div#busca button {
     color: rgba(56, 87, 35);
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: 2px solid rgba(56, 87, 35);
+    /*margin: 40px auto auto 630px;*/
 }
 
 /*

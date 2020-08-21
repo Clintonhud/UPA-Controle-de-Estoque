@@ -4,6 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
+    <link rel="icon" href="_imagens/titulo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="_css/estilo2.css">
     <link rel="stylesheet" href="_css/listaItens.css">
@@ -31,7 +32,6 @@
         <form id="form">
             <input type="text" name="campo" id="campo" size="50" placeholder="BUSCAR">
         </form>
-        <button type="button" onclick="Nova()">Cadastrar</button>
     </div>
     <div id="resultado">
         <?php
@@ -108,6 +108,10 @@
         </table>
         ";
         ?>
+    </div>
+
+    <div id="botaoCadastra">
+        <button type="button" onclick="Nova()">Cadastrar</button>
     </div>
 
     <!-- Modal para Retirada -->

@@ -55,11 +55,15 @@ section#esquerdo {
 }
 
 .formulario button {
-    margin: 60px;
-    width: 120px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: rgba(84, 130, 53);
-    color: white;
-    font-weight: bold;
-}
+      margin: 10px auto auto auto;
+      width: 130px;
+      height: 40px;
+      border-radius: 5px;
+      background-color: rgba(84, 130, 53);
+      color: white;
+      font-weight: bold;
+  }
+
+  .formulario button#espacoCima {
+      margin-top: 30px;
+  }

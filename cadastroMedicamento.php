@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="_imagens/titulo.png">
     <title>Cadastro de Medicamentos</title>
     <link rel="stylesheet" href="_css/estilo.css">
     <link rel="stylesheet" href="_css/cadastro.css">
@@ -26,7 +27,7 @@
             <input type="number" class="pequeno" id="cQtdLote" name="qtdLote" required autofocus />
             <input type="date" class="pequeno" id="cValidade" name="dataValidade" required autofocus />
             <p class="solo"><label for="cFormula">Forma Farmacêutica</label></p><br>
-            <input type="text" class="grande" id="cFormula" name="forma" required autofocus />
+            <input type="text" class="grande" id="cFormula" name="forma" placeholder="Ex: Comprimido, Frasco, Frasco/Ampola, Ampola, Bisnaga" required autofocus />
             <p class="solo"><label for="cConcent">Concentração</label></p><br>
             <input type="text" class="grande" id="cConcent" name="concentracao" required autofocus /><br>
             <button type="submit">Cadastrar</button>

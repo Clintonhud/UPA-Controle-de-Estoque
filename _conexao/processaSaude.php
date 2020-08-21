@@ -10,7 +10,7 @@ $mysqli = new mysqli($servidor, $usuario, $senha, $bancodedados);
 
 $campo = "%{$_POST['campo']}%";
 
-$sql = ("SELECT * FROM cadastrar_produto_saude WHERE nome_items like '$campo%'");
+$sql = ("SELECT * FROM cadastrar_produto_saude WHERE vencimentos = 0 AND nome_items like '$campo%' ORDER BY data_validades");
 $result = mysqli_query($mysqli, $sql);
 
 echo "

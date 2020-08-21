@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="_imagens/titulo.png">
     <title>Cadastro de Produtos</title>
     <link rel="stylesheet" href="_css/estilo.css">
     <link rel="stylesheet" href="_css/cadastro.css">
@@ -26,7 +27,7 @@
             <input type="number" class="pequeno" id="cQtdLote" name="qtdLote" required autofocus />
             <input type="date" class="pequeno" id="cValidade" name="dataValidade" required autofocus />
             <p class="solo"><label for="cModalidade">Modalidade</label></p><br>
-            <input type="text" class="grande" id="cModalidade" name="modalidade" required autofocus /><br>
+            <input type="text" class="grande" id="cModalidade" name="modalidade" placeholder="Ex: Químico Cirurgico" required autofocus /><br>
             <button type="submit">Cadastrar</button>
         </form>
     </section>
