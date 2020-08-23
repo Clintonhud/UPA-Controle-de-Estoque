@@ -10,31 +10,31 @@ $data_fim = $_POST['data_fim'];
 
 $sql = $pdo->query("SELECT * FROM `cadastrar_medicamento` WHERE vencimento = 1 AND data_entrada BETWEEN '$data_inicial' AND '$data_fim'");
 
-$html = '<h1> Relatorio de Medicamentos Vencidos</h1>';
-$html .= '<table border=1 width=100%>';
+$html = '<center><h1> Relatorio de Medicamentos Vencidos</h1></center>';
+$html .= '<table border rules="rows" cellspacing="0" cellpadding="5" width="100%">';
 $html .= '<thead>';
 $html .= '<tr>';
-$html .= '<td>Lote Medicamento</td>';
-$html .= '<td>Nome</td>';
-$html .= '<td>Data de Entrada</td>';
-$html .= '<td>Quantidade em Lote</td>';
-$html .= '<td>Data de Validade</td>';
-$html .= '<td>Forma Farmaceutica</td>';
-$html .= '<td>Concentração</td>';
-$html .= '<td>Total Retirado</td>';
+$html .= '<th bgcolor="#98FB98"><font face="arial" size="2">Lote Medicamento</font></th>';
+$html .= '<th bgcolor="#98FB98"><font face="arial" size="2">Nome</font></th>';
+$html .= '<th bgcolor="#98FB98" width="80px"><font face="arial" size="2">Data de Entrada</font></th>';
+$html .= '<th bgcolor="#98FB98"><font face="arial" size="2">Quantidade em Lote</font></th>';
+$html .= '<th bgcolor="#98FB98" width="80px"><font face="arial" size="2">Data de Validade</font></th>';
+$html .= '<th bgcolor="#98FB98"><font face="arial" size="2">Forma Farmaceutica</font></th>';
+$html .= '<th bgcolor="#98FB98"><font face="arial" size="2">Concentração</font></th>';
+$html .= '<th bgcolor="#98FB98"><font face="arial" size="2">Total Retirado</font></th>';
 $html .= '</tr>';
 $html .= '</thead>';
 
 while ($linha = $sql->fetch(PDO::FETCH_ASSOC)) {
     $html .= '<tbody>';
-    $html .= '<tr><td>' . $linha['lote_medicamento'] . '</td>';
-    $html .= '<td>' . $linha['nome_item'] . '</td>';
-    $html .= '<td>' . $linha['data_entrada'] . '</td>';
-    $html .= '<td>' . $linha['qtd_lote'] . '</td>';
-    $html .= '<td>' . $linha['data_validade'] . '</td>';
-    $html .= '<td>' . $linha['forma_farmaceutica'] . '</td>';
-    $html .= '<td>' . $linha['concentracao'] . '</td>';
-    $html .= '<td>' . $linha['total_retirada'] . '</td>';
+    $html .= '<tr><td><font face="arial" size="2">' . $linha['lote_medicamento'] . '</font></td>';
+    $html .= '<td><font face="arial" size="2">' . $linha['nome_item'] . '</font></td>';
+    $html .= '<td><font face="arial" size="2">' . $linha['data_entrada'] . '</font></td>';
+    $html .= '<td><font face="arial" size="2">' . $linha['qtd_lote'] . '</font></td>';
+    $html .= '<td><font face="arial" size="2">' . $linha['data_validade'] . '</font></td>';
+    $html .= '<td><font face="arial" size="2">' . $linha['forma_farmaceutica'] . '</font></td>';
+    $html .= '<td><font face="arial" size="2">' . $linha['concentracao'] . '</font></td>';
+    $html .= '<td><font face="arial" size="2">' . $linha['total_retirada'] . '</font></td>';
     $html .= '</tbody>';
 }
 $html .= '</table>';

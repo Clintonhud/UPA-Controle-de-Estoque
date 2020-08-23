@@ -10,18 +10,18 @@ $data_fim = $_POST['data_fim'];
 
 $sql = $pdo->query("SELECT * FROM `cadastrar_medicamento` WHERE vencimento = 0 AND data_entrada BETWEEN '$data_inicial' AND '$data_fim'");
 
-$html = '<center><h1> Relatorio de Medicamentos</h1><center>';
+$html = '<center><h1> Relatorio de Medicamentos</h1></center>';
 $html .= '<table border rules="rows" cellspacing="0" cellpadding="5" width="100%">';
 $html .= '<thead>';
 $html .= '<tr>';
-$html .= '<th bgcolor="#98FB98"><font face="arial" size="2">Lote Medicamento</font></td>';
-$html .= '<th bgcolor="#98FB98"><font face="arial" size="2">Nome</font></td>';
-$html .= '<th bgcolor="#98FB98" width="80px"><font face="arial" size="2">Data de Entrada</font></td>';
-$html .= '<th bgcolor="#98FB98"><font face="arial" size="2">Quantidade em Lote</font></td>';
-$html .= '<th bgcolor="#98FB98" width="80px"><font face="arial" size="2">Data de Validade</font></td>';
-$html .= '<th bgcolor="#98FB98"><font face="arial" size="2">Forma Farmaceutica</font></td>';
-$html .= '<th bgcolor="#98FB98"><font face="arial" size="2">Concentração</font></td>';
-$html .= '<th bgcolor="#98FB98"><font face="arial" size="2">Total Retirado</font></td>';
+$html .= '<th bgcolor="#98FB98"><font face="arial" size="2">Lote Medicamento</font></th>';
+$html .= '<th bgcolor="#98FB98"><font face="arial" size="2">Nome</font></th>';
+$html .= '<th bgcolor="#98FB98" width="80px"><font face="arial" size="2">Data de Entrada</font></th>';
+$html .= '<th bgcolor="#98FB98"><font face="arial" size="2">Quantidade em Lote</font></th>';
+$html .= '<th bgcolor="#98FB98" width="80px"><font face="arial" size="2">Data de Validade</font></th>';
+$html .= '<th bgcolor="#98FB98"><font face="arial" size="2">Forma Farmaceutica</font></th>';
+$html .= '<th bgcolor="#98FB98"><font face="arial" size="2">Concentração</font></th>';
+$html .= '<th bgcolor="#98FB98"><font face="arial" size="2">Total Retirado</font></th>';
 $html .= '</tr>';
 $html .= '</thead>';
 
