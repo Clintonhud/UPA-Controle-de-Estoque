@@ -52,17 +52,17 @@ if (!isset($_SESSION['usuario'])) {
                 <p id="meio">até</p>
                 <input type='date' id='valor2' class='valor' name='data_fim' custo='custo2' custoexemplo='custoexemplo2'>
                 <p>Data Final</p>
-                <button id="espacoCima" type="submit">Estoque Medicamentos</button>
+                <button id="espacoCima" type="submit" formtarget="_blank">Estoque Medicamentos</button>
             </form>
             <form method="POST" action="gerarRelatorioSauVenc.php">
                 <input type="hidden" type='date' id='custo1' name='data_inicial'>
                 <input type="hidden" type='date' id='custo2' name='data_fim'>
-                <button type="submit">Produtos para Saúde</button>
+                <button type="submit" formtarget="_blank">Produtos para Saúde</button>
             </form>
             <form method="POST" action="gerarRelatorioLabVenc.php">
                 <input type="hidden" type='date' id='custoexemplo1' name='data_inicial'>
                 <input type="hidden" type='date' id='custoexemplo2' name='data_fim'>
-                <button type="submit">Itens Laboratoriais</button>
+                <button type="submit" formtarget="_blank">Itens Laboratoriais</button>
             </form>
         </section>
 
@@ -74,17 +74,17 @@ if (!isset($_SESSION['usuario'])) {
                 <p id="meio">até</p>
                 <input type='date' id='valor2' class='relatorio' name='data_fim' custorel='custorel2' custoexemplorel='custoexemplorel2'>
                 <p>Data Final</p>
-                <button id="espacoCima" type="submit">Estoque Medicamentos</button>
+                <button id="espacoCima" type="submit" formtarget="_blank">Estoque Medicamentos</button>
             </form>
             <form method="POST" action="gerarRelatorioSau.php">
                 <input type="hidden" type='date' id='custorel1' name='data_inicial'>
                 <input type="hidden" type='date' id='custorel2' name='data_fim'>
-                <button type="submit">Produtos para Saúde</button>
+                <button type="submit" formtarget="_blank">Produtos para Saúde</button>
             </form>
             <form method="POST" action="gerarRelatorioLab.php">
                 <input type="hidden" type='date' id='custoexemplorel1' name='data_inicial'>
                 <input type="hidden" type='date' id='custoexemplorel2' name='data_fim'>
-                <button type="submit">Itens Laboratoriais</button>
+                <button type="submit" formtarget="_blank">Itens Laboratoriais</button>
             </form>
         </aside>
 

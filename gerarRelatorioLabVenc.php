@@ -8,7 +8,7 @@ $pdo = new PDO('mysql:host=localhost; dbname=upa;', 'root', '');
 $data_inicial = $_POST['data_inicial'];
 $data_fim = $_POST['data_fim'];
 
-$sql = $pdo->query("SELECT * FROM `cadastrar_itens_laboratoriais` WHERE vencimentol = 1 AND data_entradal BETWEEN '$data_inicial' AND '$data_fim'");
+$sql = $pdo->query("SELECT * FROM `cadastrar_itens_laboratoriais` WHERE vencimentol = 1 AND data_entradal BETWEEN '$data_inicial' AND '$data_fim' ORDER BY data_validadel");
 
 $html = '<center><h1>Relatorio de Itens Laboratoriais Vencidos</h1></center>';
 $html .= '<table border rules="rows" cellspacing="0" cellpadding="5" width="100%">';

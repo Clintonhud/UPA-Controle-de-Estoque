@@ -8,7 +8,7 @@ $pdo = new PDO('mysql:host=localhost; dbname=upa;', 'root', '');
 $data_inicial = $_POST['data_inicial'];
 $data_fim = $_POST['data_fim'];
 
-$sql = $pdo->query("SELECT * FROM `cadastrar_produto_saude` WHERE vencimentos = 0 AND data_entradas BETWEEN '$data_inicial' AND '$data_fim'");
+$sql = $pdo->query("SELECT * FROM `cadastrar_produto_saude` WHERE vencimentos = 0 AND data_entradas BETWEEN '$data_inicial' AND '$data_fim' ORDER BY data_entradas");
 
 $html = '<center><h1>Relatorio de Produtos para Saúde</h1></center>';
 $html .= '<table border rules="rows" cellspacing="0" cellpadding="5" width="100%">';
