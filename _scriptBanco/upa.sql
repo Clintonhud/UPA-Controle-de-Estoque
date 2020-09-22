@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 28-Ago-2020 às 23:33
+-- Generation Time: 22-Set-2020 às 22:28
 -- Versão do servidor: 5.7.23
 -- versão do PHP: 7.2.10
 
@@ -44,15 +44,6 @@ CREATE TABLE IF NOT EXISTS `cadastrar_itens_laboratoriais` (
   KEY `fk_cadastrar_itens_laboratoriais_login1_idx` (`login_idlogin`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Extraindo dados da tabela `cadastrar_itens_laboratoriais`
---
-
-INSERT INTO `cadastrar_itens_laboratoriais` (`lote_laboratorio`, `nome_iteml`, `data_entradal`, `qtd_lotel`, `data_validadel`, `forma`, `total_retirada_lab`, `vencimentol`, `login_idlogin`) VALUES
-('dfb343', 'becker', '2020-08-02', 6, '2020-09-02', 'Unidade', 0, 1, 1),
-('qfdf42', 'Proveta', '2020-07-26', 3, '2020-09-03', 'Unidade', 4, 0, 1),
-('sdv2342', 'Cilindro', '2020-07-12', 6, '2020-07-29', 'Unidade', 0, 1, 1);
-
 -- --------------------------------------------------------
 
 --
@@ -75,21 +66,6 @@ CREATE TABLE IF NOT EXISTS `cadastrar_medicamento` (
   KEY `fk_cadastrar_medicamento_login_idx` (`login_idlogin`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Extraindo dados da tabela `cadastrar_medicamento`
---
-
-INSERT INTO `cadastrar_medicamento` (`lote_medicamento`, `nome_item`, `data_entrada`, `qtd_lote`, `data_validade`, `forma_farmaceutica`, `concentracao`, `total_retirada`, `vencimento`, `login_idlogin`) VALUES
-('12345', 'dipirona', '2020-07-29', 5, '2020-08-27', 'Unidade', '200mg', 8, 0, 1),
-('123sda', 'torcilax', '2020-08-02', 20, '2020-08-31', 'unidade', '20 g', 0, 1, 1),
-('130765', 'Probenxil', '2020-01-29', 10, '2020-06-22', 'pomada', '11,6mg', 0, 1, 1),
-('54gf', 'Bepantol', '2020-08-02', 1, '2020-09-15', 'Pomada', '30g', 0, 0, 1),
-('b19f', 'Doralgina', '2020-08-04', 25, '2020-09-24', 'Comprimido', '360mg', 0, 1, 1),
-('b19m12', 'Histamin', '2020-08-17', 13, '2020-09-25', 'Comprimido', '2mg', 7, 0, 1),
-('b2oa', 'Neolefrin', '2020-03-24', 5, '2020-07-02', 'Comprimido', '20mg', 0, 1, 1),
-('fgnbr43', 'anador', '2020-07-26', 4, '2020-08-26', 'Comprimido', '50mg', 2, 0, 1),
-('sdvc343', 'Histalorigramasol', '2020-07-30', 7, '2020-12-23', 'Comprimido', '11,6mg', 0, 0, 1);
-
 -- --------------------------------------------------------
 
 --
@@ -111,16 +87,6 @@ CREATE TABLE IF NOT EXISTS `cadastrar_produto_saude` (
   KEY `fk_cadastrar_produto_saude_login1_idx` (`login_idlogin`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Extraindo dados da tabela `cadastrar_produto_saude`
---
-
-INSERT INTO `cadastrar_produto_saude` (`lote_saude`, `nome_items`, `data_entradas`, `qtd_lotes`, `data_validades`, `modalidade`, `total_retirada_saude`, `vencimentos`, `login_idlogin`) VALUES
-('32f3', 'Luvas Descartaveis', '2020-08-02', 3, '2020-09-02', 'Pacote', 3, 1, 1),
-('av32', 'Alcool em gel', '2020-07-29', 2, '2020-09-02', 'Pacote', 3, 0, 1),
-('iubadc3', 'Preservativo', '2020-08-12', 4, '2020-09-01', 'unidade', 4, 1, 1),
-('sdv2342', 'Cotonete', '2020-08-02', 5, '2020-06-24', 'Pacote', 0, 1, 1);
-
 -- --------------------------------------------------------
 
 --
@@ -141,7 +107,7 @@ CREATE TABLE IF NOT EXISTS `login` (
 --
 
 INSERT INTO `login` (`idlogin`, `senha`, `usuario`) VALUES
-(1, '12345', 'admin');
+(1, 'itaupa2020', 'administrador');
 
 --
 -- Constraints for dumped tables
